@@ -5,14 +5,13 @@ extends Node
 #
 
 func _ready():
-	pass # Replace with function body.
+	_setLightMode(global.lightState)
 
 func _process(delta):
 	
 	pass
 
 func _setLightMode(mode):
-	global.lightState = mode;
 	if (mode == global.PlayerLightState.DARK):
 		$LightLayer.visible = false;
 		$DarkLayer.visible = true;

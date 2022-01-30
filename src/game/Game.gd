@@ -14,4 +14,5 @@ func _process(delta):
 		else:
 			mode = global.PlayerLightState.DARK
 		emit_signal('LightModeChanged', mode)
+		global.lightState = mode;
 
