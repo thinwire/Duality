@@ -25,3 +25,5 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="Postprocess" parent="." instance=ExtResource( 6 )]
+
+[connection signal="LightModeChanged" from="." to="Level" method="_on_Game_LightModeChanged"]

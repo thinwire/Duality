@@ -10,12 +10,16 @@ func _ready():
 func _process(delta):
 	
 	pass
-	
-func _on_light_state_changed():
-	if global.lightState == global.PlayerLightState.DARK:
-		# Let's switch to dark mode
-		pass
+
+func _setLightMode(mode):
+	global.lightState = mode;
+	if (mode == global.PlayerLightState.DARK):
+		$LightLayer.visible = false;
+		$DarkLayer.visible = true;
 	else:
-		# Let's switch to light mode
-		pass
-	pass
+		$LightLayer.visible = true;
+		$DarkLayer.visible = false;
+
+
+func _on_Game_LightModeChanged(new_mode):
+	_setLightMode(new_mode);
