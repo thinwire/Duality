@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [sub_resource type="Gradient" id=1]
-colors = PoolColorArray( 0.213262, 0.131882, 0.503906, 1, 0.273438, 0.778625, 1, 1 )
+colors = PoolColorArray( 0.109986, 0.059845, 0.289063, 1, 0.123047, 0.328125, 0.308899, 1 )
 
 [sub_resource type="GradientTexture" id=2]
 gradient = SubResource( 1 )
@@ -10,16 +10,20 @@ width = 1024
 [node name="Background" type="ParallaxBackground"]
 
 [node name="Sky" type="TextureRect" parent="."]
-margin_right = 720.0
-margin_bottom = 1280.0
-grow_horizontal = 0
-grow_vertical = 0
-rect_rotation = 270.0
-rect_scale = Vector2( 1, -1 )
-size_flags_horizontal = 3
-size_flags_vertical = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -82.0
+margin_top = -168.0
+margin_right = -642.0
+margin_bottom = -168.0
+rect_rotation = 90.0
+rect_scale = Vector2( 1.5, -2 )
+rect_clip_content = true
+size_flags_horizontal = 15
+size_flags_vertical = 15
 texture = SubResource( 2 )
 expand = true
+stretch_mode = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
