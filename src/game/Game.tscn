@@ -18,11 +18,12 @@ z_index = 1
 [node name="Player" parent="Level" instance=ExtResource( 5 )]
 position = Vector2( -176, -64 )
 
-[node name="Foreground" parent="." instance=ExtResource( 3 )]
-
-[node name="Camera" type="Camera2D" parent="."]
+[node name="Camera" type="Camera2D" parent="Level/Player"]
+position = Vector2( 0, -54 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
+
+[node name="Foreground" parent="." instance=ExtResource( 3 )]
 
 [node name="Postprocess" parent="." instance=ExtResource( 6 )]
 
