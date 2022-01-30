@@ -7,8 +7,8 @@
 [sub_resource type="PhysicsMaterial" id=2]
 friction = 0.1
 
-[sub_resource type="RayShape2D" id=1]
-length = 41.0
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 14.0
 
 [node name="Player" type="RigidBody2D"]
 mode = 2
@@ -26,8 +26,9 @@ frames = ExtResource( 2 )
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.15, -46 )
+position = Vector2( 0, -23 )
 shape = SubResource( 1 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0, 12 )
 polygon = PoolVector2Array( 0, -20, -15, -46, 15, -46 )

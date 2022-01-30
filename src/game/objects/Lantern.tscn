@@ -1,14 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://res/lantern/LanternAtlas.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://res/lantern/lanterm_light_blu.png" type="Texture" id=2]
 [ext_resource path="res://res/lantern/lanterm_light_grn.png" type="Texture" id=3]
+[ext_resource path="res://src/game/objects/Lantern.gd" type="Script" id=4]
 
 [sub_resource type="CanvasItemMaterial" id=1]
 blend_mode = 1
-light_mode = 2
 
 [node name="Lantern" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="sprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 1 )
@@ -20,6 +21,7 @@ offset = Vector2( 0, -24 )
 position = Vector2( 9, -16 )
 texture = ExtResource( 3 )
 shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
 
 [node name="greenLightSprite" type="Sprite" parent="greenLight"]
 modulate = Color( 1, 1, 1, 0.341176 )
@@ -31,6 +33,7 @@ visible = false
 position = Vector2( 9, -16 )
 texture = ExtResource( 2 )
 shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
 
 [node name="blueLightSprite" type="Sprite" parent="blueLight"]
 modulate = Color( 1, 1, 1, 0.341176 )

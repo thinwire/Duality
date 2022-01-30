@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [sub_resource type="Gradient" id=1]
-colors = PoolColorArray( 0.109986, 0.059845, 0.289063, 1, 0.123047, 0.328125, 0.308899, 1 )
+colors = PoolColorArray( 0.0382627, 0.0172577, 0.113281, 1, 0.0416565, 0.152344, 0.141967, 1 )
 
 [sub_resource type="GradientTexture" id=2]
 gradient = SubResource( 1 )

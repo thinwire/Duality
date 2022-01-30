@@ -89,8 +89,16 @@ func _integrate_forces(s):
 		else:
 			if lv.x < 0 and move_left:
 				new_anim = "walk_left"
+				$Lantern.scale.x = -1
+				$Lantern.position.x = -14
+				$Lantern/sprite.animation = "walk"
 			elif lv.x > 0 and move_right:
 				new_anim = "walk_right"
+				$Lantern.scale.x = 1
+				$Lantern.position.x = 14
+				$Lantern/sprite.animation = "walk"
+			else:
+				$Lantern/sprite.animation = "idle"
 	else:
 		# Process logic when the character is in the air.
 		if move_left and not move_right:
