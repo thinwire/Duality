@@ -1,0 +1,17 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+/*
+ * Post-process effys for that jank high-effort look
+ */
+
+void fragment() {
+	
+	
+	
+	COLOR.rgba = vec4(1.0,1.0,1.0,0.0); /* Remember to set alpha to non-zero */
+}
+
+"

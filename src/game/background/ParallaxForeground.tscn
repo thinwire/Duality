@@ -1,0 +1,7 @@
+[gd_scene format=2]
+
+[node name="Foreground" type="ParallaxBackground"]
+
+[node name="Nearer" type="ParallaxLayer" parent="."]
+
+[node name="Nearest" type="ParallaxLayer" parent="."]
